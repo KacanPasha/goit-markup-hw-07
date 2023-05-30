@@ -24,7 +24,7 @@
         <a class="heder-logo link" href="./index.html"
           >Web<span class="heder-logo-color">Studio</span></a
         >
-       
+
         <nav class="heder-nav">
           <ul class="heder-list list">
             <li class="heder-item">
@@ -55,14 +55,14 @@
           </ul>
         </address>
         <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-      <svg class="feature-svg" width="32" height="22">
-        <use href="./images/icons.svg#icon-menu-hamburger"></use>
-      </svg>
-      </button>
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="feature-svg" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--hero section-->
@@ -139,31 +139,82 @@
           <h2 class="blok-photo-title">What are we doing</h2>
           <ul class="blok-photo-lisk list">
             <li class="blok-photo-item">
-              <img
-                class="blok-photo-img"
-                src="./images/blok-photo/img-1.jpg"
-                width="360"
-                height="360"
-                alt="monitor/with/graph"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/blok-photo/img-1@1x.webp 1x,
+                    ./images/blok-photo/img-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/blok-photo/img-1@1x.jpg 1x,
+                    ./images/blok-photo/img-1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="blok-photo-img"
+                  src="./images/blok-photo/img-1@1x.jpg"
+                  alt="iPhone/in/hand/on/the/background/of/a/macbook"
+                  width="360"
+                  height="360"
+                />
+              </picture>
             </li>
             <li class="blok-photo-item">
-              <img
-                class="blok-photo-img"
-                src="./images/blok-photo/img-2.jpg"
-                width="360"
-                height="360"
-                alt="iphone/with/side/messenger"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/blok-photo/img-2@1x.webp 1x,
+                    ./images/blok-photo/img-2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/blok-photo/img-2@1x.jpg 1x,
+                    ./images/blok-photo/img-2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="blok-photo-img"
+                  src="./images/blok-photo/img-2@1x.jpg"
+                  alt="iPhone/in/hand/on/the/background/of/a/macbook"
+                  width="360"
+                  height="360"
+                />
+              </picture>
             </li>
             <li class="blok-photo-item">
-              <img
-                class="blok-photo-img"
-                src="./images/blok-photo/img-3.jpg"
-                width="360"
-                height="360"
-                alt="iPhone/in/hand/on/the/background/of/a/macbook"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/blok-photo/img-3@1x.webp 1x,
+                    ./images/blok-photo/img-3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/blok-photo/img-3@1x.jpg 1x,
+                    ./images/blok-photo/img-3@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="blok-photo-img"
+                  src="./images/blok-photo/img-3@1x.jpg"
+                  alt="iPhone/in/hand/on/the/background/of/a/macbook"
+                  width="360"
+                  height="360"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -175,14 +226,30 @@
           <h2 class="team-section-title">Our Team</h2>
           <ul class="team-section-lisk list">
             <li class="team-section-item">
-              <img
-                class="team-section-avatar"
-                srcset="./images/team-section/3-img@1x-3.png 1x, ./images/team-section/3-img@2x-3.png 2x"
-                src="./images/team-section/3-img@1x-3.png"
-                alt="Mark Guerrero"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-section/img@1x-3.webp 1x,
+                    ./images/team-section/img@1x-3.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-section/img@1x-3.jpg 1x,
+                    ./images/team-section/img@1x-3.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="blok-photo-img"
+                  src="./images/team-section/img@1x-3.jpg"
+                  alt="Mark Guerrero"
+                  width="360"
+                  height="360"
+                />
+              </picture>
               <div class="cont-name">
                 <h3 class="team-section-name">Mark Guerrero</h3>
                 <p class="team-section-text">Product Designer</p>
@@ -243,14 +310,30 @@
               </div>
             </li>
             <li class="team-section-item">
-              <img
-              class="team-section-avatar"
-              srcset="./images/team-section/2-img@1x-2.png 1x, ./images/team-section/2-img@2x-2.png 2x"
-              src="./images/team-section/2-img@1x-2.png"
-              alt="Mark Guerrero"
-              width="264"
-              height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-section/img@1x-2.webp 1x,
+                    ./images/team-section/img@1x-2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-section/img@1x-2.jpg 1x,
+                    ./images/team-section/img@1x-2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="blok-photo-img"
+                  src="./images/team-section/img@1x-2.jpg"
+                  alt="Tom Ford"
+                  width="360"
+                  height="360"
+                />
+              </picture>
               <div class="cont-name">
                 <h3 class="team-section-name">Tom Ford</h3>
                 <p class="team-section-text">Frontend Developer</p>
@@ -311,14 +394,30 @@
               </div>
             </li>
             <li class="team-section-item">
-              <img
-                class="team-section-avatar"
-                srcset="./images/team-section/1-img@1x-1.png 1x, ./images/team-section/1-img@2x-1.png 2x"
-                src="./images/team-section/1-img@1x-1.png"
-                alt="Camila Garcia"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-section/img@1x-1.webp 1x,
+                    ./images/team-section/img@1x-1.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-section/img@1x-1.jpg 1x,
+                    ./images/team-section/img@1x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="blok-photo-img"
+                  src="./images/team-section/img@1x-1.jpg"
+                  alt="Camila Garcia"
+                  width="360"
+                  height="360"
+                />
+              </picture>
               <div class="cont-name">
                 <h3 class="team-section-name">Camila Garcia</h3>
                 <p class="team-section-text">Marketing</p>
@@ -379,14 +478,30 @@
               </div>
             </li>
             <li class="team-section-item">
-              <img
-              class="team-section-avatar"
-              srcset="./images/team-section/4-img@1x-4.png 1x, ./images/team-section/4-img@2x-4.png 2x"
-              src="./images/team-section/4-img@1x-4.png"
-              alt="Mark Guerrero"
-              width="264"
-              height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-section/img@1x-4.webp 1x,
+                    ./images/team-section/img@1x-4.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-section/img@1x-4.jpg 1x,
+                    ./images/team-section/img@1x-4.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="blok-photo-img"
+                  src="./images/team-section/img@1x-4.jpg"
+                  alt="Daniel Wilson"
+                  width="360"
+                  height="360"
+                />
+              </picture>
               <div class="cont-name">
                 <h3 class="team-section-name">Daniel Wilson</h3>
                 <p class="team-section-text">UI Designer</p>
@@ -717,15 +832,27 @@
       </button>
 
       <ul class="mobile-menu list">
-        <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link">Studio</a></li>
-        <li  class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a></li>
-        <li  class="mobile-menu-item"><a href="" class="mobile-menu-link link">Contacts</a></li>
-        
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link link">Contacts</a>
+        </li>
       </ul>
       <ul class="mobile-contacts list">
-        <li class="mobile-tel-item"><a href="tel:+110001111111" class="link mobile-tel-item">+11 (000) 111-11-11</a></li>
-        <li class="mobile-mail-item"><a href="mailto:info@devstudio.com" class="link mobile-mail-item">info@devstudio.com</a></li>
-
+        <li class="mobile-tel-item">
+          <a href="tel:+110001111111" class="link mobile-tel-item"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-mail-item">
+          <a href="mailto:info@devstudio.com" class="link mobile-mail-item"
+            >info@devstudio.com</a
+          >
+        </li>
       </ul>
       <ul class="mobile-socials list">
         <li class="footer-socials-item">
@@ -783,13 +910,13 @@
       </ul>
     </div>
     <script src="./js/modal.js"></script>
-   
+
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script defer src="./js/mobile-menu.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
