@@ -21,23 +21,24 @@
     <!--header section-->
     <header class="heder">
       <div class="container heder-flex">
+        <a class="heder-logo link" href="./index.html"
+          >Web<span class="heder-logo-color">Studio</span></a
+        >
+       
         <nav class="heder-nav">
-          <a class="heder-logo link" href="./index.html"
-            >Web<span class="heder-logo-color">Studio</span></a
-          >
           <ul class="heder-list list">
             <li class="heder-item">
               <a class="heder-link link" href="./index.html">Studio</a>
             </li>
             <li class="heder-item">
-              <a class="heder-link link active" href="./portfolio.html">Portfolio</a>
+              <a class="heder-link link  active" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="heder-item">
               <a class="heder-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <address class="heder-nav-contakt">
+        <address class="heder-nav-contact">
           <ul class="heder-contakt-lisk list">
             <li class="heder-contakt-item">
               <a
@@ -53,13 +54,22 @@
             </li>
           </ul>
         </address>
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+      <svg class="feature-svg" width="32" height="22">
+        <use href="./images/icons.svg#icon-menu-hamburger"></use>
+      </svg>
+      </button>
       </div>
     </header>
     <!--control-->
     <main>
       <section class="gallery">
         <div class="container">
-          <h1 hidden>portfolio</h1>
+         <h1 hidden>portfolio</h1>
           <ul class="control-list list">
             <li class="control-item">
               <button class="btn-port" type="button">All</button>
@@ -76,19 +86,72 @@
             <li class="control-item">
               <button class="btn-port" type="button">Marketing</button>
             </li>
-          </ul>
-          <!--gallery-->
+          </ul> 
+         
           <ul class="gallery-lisk list">
             <li class="gallery-item gallery-hover">
               <a class="gallery-link link" href="">
                 <div class="team-thumb">
-                  <img
-                    class="gallery-item-img"
-                    src="./images/portfolio/banking-app.jpg"
-                    alt="banking application interface"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                 
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-1.webp 1x,
+                        ./images/portfolio/dex-@2x-1.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-1.jpg 1x,
+                        ./images/portfolio/dex-@2x-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-1.webp 1x,
+                        ./images/portfolio/tab-@2x-1.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-1.jpg 1x,
+                        ./images/portfolio/tab-@2x-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                 
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-1.webp 1x,
+                        ./images/portfolio/mob-@2x-1.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-1.jpg 1x,
+                        ./images/portfolio/mob-@2x-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-item-img"
+                      src="./images/portfolio/dex-@1x-1.jpg"
+                      alt="banking application interface"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -107,13 +170,66 @@
             <li class="gallery-item gallery-hover">
               <a class="gallery-link link" href="">
                 <div class="team-thumb">
-                  <img
-                    class="gallery-item-img"
-                    src="./images/portfolio/cashless-payment.jpg"
-                    alt="pay pass payment"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                   
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-2.webp 1x,
+                        ./images/portfolio/dex-@2x-2.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-2.jpg 1x,
+                        ./images/portfolio/dex-@2x-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                   
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-2.webp 1x,
+                        ./images/portfolio/tab-@2x-2.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-2.jpg 1x,
+                        ./images/portfolio/tab-@2x-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-2.webp 1x,
+                        ./images/portfolio/mob-@2x-2.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-2.jpg 1x,
+                        ./images/portfolio/mob-@2x-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-item-img"
+                      src="./images/portfolio/dex-@1x-2.jpg"
+                      alt="banking application interface"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -130,13 +246,66 @@
             <li class="gallery-item gallery-hover">
               <a class="gallery-link link" href="">
                 <div class="team-thumb">
-                  <img
-                    class="gallery-item-img"
-                    src="./images/portfolio/meditation-app.jpg"
-                    alt="macbook+iphone"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                   
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-3.webp 1x,
+                        ./images/portfolio/dex-@2x-3.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-3.jpg 1x,
+                        ./images/portfolio/dex-@2x-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                   
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-3.webp 1x,
+                        ./images/portfolio/tab-@2x-3.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-3.jpg 1x,
+                        ./images/portfolio/tab-@2x-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-3.webp 1x,
+                        ./images/portfolio/mob-@2x-3.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-3.jpg 1x,
+                        ./images/portfolio/mob-@2x-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-item-img"
+                      src="./images/portfolio/dex-@1x-3.jpg"
+                      alt="banking application interface"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -153,13 +322,66 @@
             <li class="gallery-item gallery-hover">
               <a class="gallery-link link" href="">
                 <div class="team-thumb">
-                  <img
-                    class="gallery-item-img"
-                    src="./images/portfolio/taxi-service.jpg"
-                    alt="steering wheel in the car"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-4.webp 1x,
+                        ./images/portfolio/dex-@2x-4.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-4.jpg 1x,
+                        ./images/portfolio/dex-@2x-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-4.webp 1x,
+                        ./images/portfolio/tab-@2x-4.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-4.jpg 1x,
+                        ./images/portfolio/tab-@2x-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-4.webp 1x,
+                        ./images/portfolio/mob-@2x-4.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-4.jpg 1x,
+                        ./images/portfolio/mob-@2x-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-item-img"
+                      src="./images/portfolio/dex-@1x-4.jpg"
+                      alt="banking application interface"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -176,13 +398,66 @@
             <li class="gallery-item gallery-hover">
               <a class="gallery-link link" href="">
                 <div class="team-thumb">
-                  <img
-                    class="gallery-item-img"
-                    src="./images/portfolio/screen-lllustrations.jpg"
-                    alt="illustration of iphone moon"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                   
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-5.webp 1x,
+                        ./images/portfolio/dex-@2x-5.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-5.jpg 1x,
+                        ./images/portfolio/dex-@2x-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                   
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-5.webp 1x,
+                        ./images/portfolio/tab-@2x-5.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-5.jpg 1x,
+                        ./images/portfolio/tab-@2x-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                   
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-5.webp 1x,
+                        ./images/portfolio/mob-@2x-5.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-5.jpg 1x,
+                        ./images/portfolio/mob-@2x-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-item-img"
+                      src="./images/portfolio/dex-@1x-5.jpg"
+                      alt="banking application interface"
+                     width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -199,13 +474,66 @@
             <li class="gallery-item gallery-hover">
               <a class="gallery-link link" href="">
                 <div class="team-thumb">
-                  <img
-                    class="gallery-item-img"
-                    src="./images/portfolio/online-courses.jpg"
-                    alt="girl orange sweater"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-6.webp 1x,
+                        ./images/portfolio/dex-@2x-6.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-6.jpg 1x,
+                        ./images/portfolio/dex-@2x-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                   
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-6.webp 1x,
+                        ./images/portfolio/tab-@2x-6.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-6.jpg 1x,
+                        ./images/portfolio/tab-@2x-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                   
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-6.webp 1x,
+                        ./images/portfolio/mob-@2x-6.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-6.jpg 1x,
+                        ./images/portfolio/mob-@2x-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-item-img"
+                      src="./images/portfolio/dex-@1x-6.jpg"
+                      alt="banking application interface"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -222,13 +550,66 @@
             <li class="gallery-item gallery-hover">
               <a class="gallery-link link" href="">
                 <div class="team-thumb">
-                  <img
-                    class="gallery-item-img"
-                    src="./images/portfolio/instagram-storiesc-oncept.jpg"
-                    alt="smart home app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-7.webp 1x,
+                        ./images/portfolio/dex-@2x-7.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-7.jpg 1x,
+                        ./images/portfolio/dex-@2x-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                   
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-7.webp 1x,
+                        ./images/portfolio/tab-@2x-7.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-7.jpg 1x,
+                        ./images/portfolio/tab-@2x-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                  
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-7.webp 1x,
+                        ./images/portfolio/mob-@2x-7.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-7.jpg 1x,
+                        ./images/portfolio/mob-@2x-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-item-img"
+                      src="./images/portfolio/dex-@1x-7.jpg"
+                      alt="banking application interface"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -245,13 +626,66 @@
             <li class="gallery-item gallery-hover">
               <a class="gallery-link link" href="">
                 <div class="team-thumb">
-                  <img
-                    class="gallery-item-img"
-                    src="./images/portfolio/organic-food.jpg"
-                    alt="string bag of vegetables"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-8.webp 1x,
+                        ./images/portfolio/dex-@2x-8.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-8.jpg 1x,
+                        ./images/portfolio/dex-@2x-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                 
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-8.webp 1x,
+                        ./images/portfolio/tab-@2x-8.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-8.jpg 1x,
+                        ./images/portfolio/tab-@2x-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                   
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-8.webp 1x,
+                        ./images/portfolio/mob-@2x-8.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-8.jpg 1x,
+                        ./images/portfolio/mob-@2x-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-item-img"
+                      src="./images/portfolio/dex-@1x-8.jpg"
+                      alt="banking application interface"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -268,13 +702,66 @@
             <li class="gallery-item gallery-hover">
               <a class="gallery-link link" href="">
                 <div class="team-thumb">
-                  <img
-                    class="gallery-item-img"
-                    src="./images/portfolio/fresh-coffee.jpg"
-                    alt="cappuccino"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                   
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-9.webp 1x,
+                        ./images/portfolio/dex-@2x-9.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/portfolio/dex-@1x-9.jpg 1x,
+                        ./images/portfolio/dex-@2x-9.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                   
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-9.webp 1x,
+                        ./images/portfolio/tab-@2x-9.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tab-@1x-9.jpg 1x,
+                        ./images/portfolio/tab-@2x-9.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                  
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-9.webp 1x,
+                        ./images/portfolio/mob-@2x-9.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width:767.9px )"
+                      srcset="
+                        ./images/portfolio/mob-@1x-9.jpg 1x,
+                        ./images/portfolio/mob-@2x-9.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-item-img"
+                      src="./images/portfolio/dex-@1x-9.jpg"
+                      alt="banking application interface"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -288,7 +775,7 @@
                 </div>
               </a>
             </li>
-          </ul>
+          </ul> 
         </div>
       </section>
     </main>
@@ -305,57 +792,57 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="tfooter-social-blok">
-          <p class="tfooter-social">Social media</p>
-          <ul class="tfooter-socials list">
-            <li class="tfooter-socials-item">
+        <div class="footer-social-blok">
+          <p class="footer-social">Social media</p>
+          <ul class="footer-socials list">
+            <li class="footer-socials-item">
               <a
-                class="tfooter-socials-link"
+                class="footer-socials-link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="instagram icon"
               >
-                <svg class="tfooter-socials-icon" width="24" height="24">
+                <svg class="footer-socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="tfooter-socials-item">
+            <li class="footer-socials-item">
               <a
-                class="tfooter-socials-link"
+                class="footer-socials-link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="icon twitter"
               >
-                <svg class="tfooter-socials-icon" width="24" height="24">
+                <svg class="footer-socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="tfooter-socials-item">
+            <li class="footer-socials-item">
               <a
-                class="tfooter-socials-link"
+                class="footer-socials-link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="icon facebook"
               >
-                <svg class="tfooter-socials-icon" width="24" height="24">
+                <svg class="footer-socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="tfooter-socials-item">
+            <li class="footer-socials-item">
               <a
-                class="tfooter-socials-link"
+                class="footer-socials-link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="icon linkedin"
               >
-                <svg class="tfooter-socials-icon" width="24" height="24">
+                <svg class="footer-socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -385,5 +872,88 @@
         </form>
       </div>
     </footer>
+  <!--mob menu-->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="modal-close-btn js-close-menu">
+      <svg class="modal-close-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close-icon"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu list">
+      <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link">Studio</a></li>
+      <li  class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a></li>
+      <li  class="mobile-menu-item"><a href="" class="mobile-menu-link link">Contacts</a></li>
+      
+    </ul>
+    <ul class="mobile-contacts list">
+      <li class="mobile-tel-item"><a href="tel:+110001111111" class="link mobile-tel-item">+11 (000) 111-11-11</a></li>
+      <li class="mobile-mail-item"><a href="mailto:info@devstudio.com" class="link mobile-mail-item">info@devstudio.com</a></li>
+
+    </ul>
+    <ul class="mobile-socials list">
+      <li class="footer-socials-item">
+        <a
+          class="mobile-socials-link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="instagram icon"
+        >
+          <svg class="mobile-socials-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-socials-item">
+        <a
+          class="mobile-socials-link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="icon twitter"
+        >
+          <svg class="mobile-socials-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-socials-item">
+        <a
+          class="mobile-socials-link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="icon facebook"
+        >
+          <svg class="mobile-socials-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-socials-item">
+        <a
+          class="mobile-socials-link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="icon linkedin"
+        >
+          <svg class="mobile-socials-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+ 
+ 
+  <script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
